@@ -1,0 +1,155 @@
+@use '../scss/' as *;
+// Styling header 
+.navItems{
+    .navText{
+        a{
+            position: relative;
+           
+            &::before, &::after{
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background-color:$primary_color;
+                transition: .5s;
+                opacity: 0;
+                
+            }
+            &::before{
+                top:0;
+                left:0;
+            }
+            &::after{
+                bottom:0;
+                right:0;
+            }
+            &:hover::before,&:hover::after{
+                opacity: 1;
+                width: 100%;
+                transition: 0.5s;
+            }
+            &:focus::before,&:focus::after{
+                opacity: 1;
+                width: 100%;
+                transition: 0.5s;
+            }
+            
+
+        }
+    }
+}
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color: $background_color;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    color: $text_color;
+    transition: all 1s ease;
+    .wrapper{
+        padding:10px 30px; //first value is for top and bottom and second value is for left and right 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .right{
+        
+            
+            .hamburgermenu{
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                span{
+                    width: 100%;
+                    height:3px;
+                    background-color: $primary_color;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
+    }
+    &.active{
+        background-color: $background_color;
+    
+        .hamburgermenu{
+            span{
+                &:first-child{
+                    background-color: $primary_color;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: $primary_color;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+// Styling menu Open
+.menu{
+    background-color: $background_color;
+    margin-top: $header_height;
+    width: 100%;
+    transform: all 2s ease;
+    transform:translateY(45deg)
+}
+// Styling Home
+.home_image{
+    width: 100%;
+    height: 400px;
+    &:hover{
+        background-size: cover;
+        transition: all 2s ease;
+        animation: fade 5s;
+    }
+
+@keyframes fade {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+}
+//Styling About Component
+.resume_link{
+     a{
+        text-decoration: none;
+        color: $primary_color;
+        font-weight: bold;
+        font-size: large;
+        line-height: 3;
+}
+}
+.contact_btn{
+
+     button{
+        cursor: pointer;
+        color:$text_color;
+        background-color: $primary_color;
+        border: none;
+        outline: none;
+    }
+}
+// Skills Component Styling
+.skills{
+    &_container{
+        .skills_header{
+            h1{
+                font-size: 70px;
+            }
+        }
+    }
+}
+.col_first ,.col_second{
+    border-right: 1px solid $primary_color;
+}
+.skill_title{
+    font-size: 20px;
+    color: $primary_color;
+}
