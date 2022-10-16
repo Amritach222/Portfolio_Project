@@ -37,7 +37,7 @@ const Header = ({ menuOpen, setmenuOpen }) => {
         </div>
       </div>
       <div className={menuOpen?'d-flex':'d-none'} width='100%'>
-      <Menu/>
+      <Menu setmenuOpen={setmenuOpen}/>
       </div>
     </div>
   );

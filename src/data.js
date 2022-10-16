@@ -6,6 +6,8 @@ import image5 from "./assets/images/home/image5.jpg"
 import image6 from "./assets/images/home/image6.webp"
 // importing about image
 import about_image from "./assets/images/about/amrit.png";
+// importing contact image
+import contact_image from "./assets/images/contact/contact_image.png"
 const data={
      name: "Amrit Acharya",
      header:{
@@ -46,6 +48,11 @@ const data={
                title:"Management(CRM+CMS)",
                skills:["Hubspot","Salesforce","Bynder","Unbounce","Shopify"]
           }
+     },
+     contact:{
+          contact_gmail:'amritach222@gmail.com',
+          contact_img:contact_image,
+          contact_address:"Nepal"
      }
      
 

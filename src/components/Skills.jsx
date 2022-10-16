@@ -12,7 +12,7 @@ const Skills = () => {
         <br />
         <div className="skills_container_content">
           <div className="row">
-            <div data-aos='fade-right' data-aos-delay='500' className="col-12 col-md-4 col_first d-flex flex-column align-items-center justify-content-start m-0 p-0 my-3">
+            <div data-aos='fade-right' data-aos-delay='500' className="col-12 col-md-4 col_first d-flex flex-column align-items-center justify-content-start m-0 p-0 py-3">
               <div className="skill_title">{web.title}</div>
               <br />
               <br />
@@ -30,7 +30,7 @@ const Skills = () => {
                 <div className="extra_skill"> <b>+ more</b></div>
               </div>
             </div>
-            <div data-aos='fade-up' data-aos-delay='500' className="col-12 col-md-4 col_second d-flex flex-column align-items-center justify-content-start m-0 p-0 my-3">
+            <div data-aos='fade-up' data-aos-delay='500' className="col-12 col-md-4 col_second d-flex flex-column align-items-center justify-content-start m-0 p-0 py-3">
               <div className="skill_title">{design.title}</div>
               <br />
               <br />
@@ -46,7 +46,7 @@ const Skills = () => {
                 <div className="extra_skill"> <b>+ more</b></div>
               </div>
             </div>
-            <div data-aos='fade-left' data-aos-delay='500' className="col-12 col-md-4 col_third d-flex flex-column align-items-center justify-content-start m-0 p-0 my-3">
+            <div data-aos='fade-left' data-aos-delay='500' className="col-12 col-md-4 col_third d-flex flex-column align-items-center justify-content-start m-0 p-0 py-3">
               <div className="skill_title">{management.title}</div>
               <br />
               <br />

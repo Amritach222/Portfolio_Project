@@ -148,8 +148,69 @@
 }
 .col_first ,.col_second{
     border-right: 1px solid $primary_color;
+    @include mobile{
+        border-bottom: 1px solid $primary_color ;
+        border-right: none;
+    }
 }
 .skill_title{
     font-size: 20px;
     color: $primary_color;
+}
+//Styling Contact Component
+.contact_input{
+    input{
+        height: 40px;
+    }
+    input, textarea{
+        border: 1px solid $primary_color;
+        outline: none;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    button{
+        cursor: pointer;
+        color:$text_color;
+        background-color: $primary_color;
+        border: none;
+        outline: none;
+    }
+}
+.contact_address, .contact_email{
+    .contact_used_icon{
+        color:$primary_color;
+    }
+    .contact_used_text{
+        line-height: 0.7;
+    }
+}
+// Styling footer components
+.footer{
+    background-color: $background_color;
+}
+.footer_container{
+    min-height: 60px;
+    &_left{
+        &_links{
+            a{
+                text-decoration:'none';
+                transition: all .5s ease;
+                &:hover{
+                    color:$primary_color;
+                }
+            }
+        }
+
+    }
+    &_right{
+        font-size: x-small;
+        span{
+            color:$primary_color;
+        }
+    }
+
+}
+.social_media_link{
+    color:white;
+    
 }

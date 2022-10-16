@@ -21,7 +21,6 @@ function App() {
     <div className="App">
      <Header menuOpen={menuOpen} setmenuOpen={setmenuOpen}/>
      <Home/>
-     
      <div className="container content ">
      <About/>
      <Skills/>
