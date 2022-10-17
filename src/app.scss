@@ -4,18 +4,38 @@
     font-family: 'Poppins', sans-serif;
     // background-color: $background_color;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     margin: 0;
     padding: 0;
 }
-.content{
-    margin-top: 70px;
-    scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-        scrollbar-width: none; //for firefox 
-        &::-webkit-scrollbar{
-            display:none;
-        }
+.App{
+    // height: 100vh;
 
+    .content{
+        margin-top: 70px;
+        scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+            scrollbar-width: none; //for firefox 
+            &::-webkit-scrollbar{
+                display:none;
+            }
+        }
+    }
+    .show{
+        outline: none;
+        cursor: pointer;
+        border: none;
+        background-color: $background_color;
+        position:sticky;
+        bottom: 30px;
+        right: 30px;
+        float: right;
+       border-radius: 50%;
+       color: white;
+       padding: 6px 12px;
+       padding-top: 10px;
+    }
     
-}

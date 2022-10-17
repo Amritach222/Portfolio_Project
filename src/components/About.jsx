@@ -8,7 +8,7 @@ const About = () => {
     <div className="about" name="about" id="about">
       <div className="row">
         <div className="col-12 col-md-6">
-          <img data-aos='fade-up' data-aos-delay='900' className="w-100 h-100 py-5" src={aboutImage} alt="" />
+          <img data-aos='fade-up' data-aos-delay='900' className="w-100 h-100 py-2" src={aboutImage} alt="" />
         </div>
         <div className="col-12 col-md-6  d-flex flex-column justify-content-center text-center text-md-left align-items-center align-items-md-start">
           <div className="about_subtitle" data-aos='fade-down' data-aos-delay='900'>

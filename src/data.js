@@ -8,6 +8,8 @@ import image6 from "./assets/images/home/image6.webp"
 import about_image from "./assets/images/about/amrit.png";
 // importing contact image
 import contact_image from "./assets/images/contact/contact_image.png"
+//import email Sent 
+import email_sent from "./assets/images/contact/emailsent.svg"
 const data={
      name: "Amrit Acharya",
      header:{
@@ -52,7 +54,16 @@ const data={
      contact:{
           contact_gmail:'amritach222@gmail.com',
           contact_img:contact_image,
-          contact_address:"Nepal"
+          contact_address:"Nepal",
+          email_sent,
+     },
+     footer:{
+          social_media_link:{
+               in:'https://www.linkedin.com/in/amrit-ach-4219731a0/',
+               fb:'https://www.facebook.com/amrit.ach.16/',
+               twt:'https://www.twitter.com/amrit.ach',
+               github:'https://www.github.com/amritach222'
+          }
      }
      
 

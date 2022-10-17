@@ -44,7 +44,7 @@
     background-color: $background_color;
     position: fixed;
     top: 0;
-    z-index: 3;
+    z-index: 100;
     color: $text_color;
     transition: all 1s ease;
     .wrapper{
@@ -68,7 +68,7 @@
                     height:3px;
                     background-color: $primary_color;
                     transform-origin: left;
-                    transition: all 2s ease;
+                    transition: all 1s ease;
                 }
             }
         }
@@ -98,10 +98,24 @@
     background-color: $background_color;
     margin-top: $header_height;
     width: 100%;
-    transform: all 2s ease;
-    transform:translateY(45deg)
+    position:relative;
+    top: -260px;
+    transition: all 1s ease;
+    z-index: 1;
+}
+.menu_active{
+    background-color: $background_color;
+    margin-top: $header_height;
+    width: 100%;
+    position:relative;
+    top:0px;
+    transition: all 1s ease;
+    z-index: 1;
 }
 // Styling Home
+.home{
+    padding-top: 70px;
+}
 .home_image{
     width: 100%;
     height: 400px;
@@ -182,7 +196,15 @@
     }
     .contact_used_text{
         line-height: 0.7;
+        position: relative;
+        z-index: 1;
     }
+}
+.sent_email_image_container{
+    position: relative;
+    top: -120px;
+    z-index: 0;
+    left: -50px;
 }
 // Styling footer components
 .footer{
@@ -213,4 +235,55 @@
 .social_media_link{
     color:white;
     
+}
+//Styling Share
+.share_open{
+    position: relative;
+    top:70px;
+    background-color: $background_color;
+    width: fit-content;
+    padding:10px 20px;
+    right:0px;
+    float:right;
+    transition: all 1s ease;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding:0;
+        li{
+            color: white;
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color:$primary_color;
+                }
+            }
+        }
+    }
+}
+.share_close{
+    position: relative;
+    top:70px;
+    background-color: $background_color;
+    width: fit-content;
+    padding:10px 20px;
+    right:-250px;
+    float:right;
+    transition: all 1s ease;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding:0;
+        li{
+            color: white;
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color:$primary_color;
+                }
+            }
+        }
+    }
 }
