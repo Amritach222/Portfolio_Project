@@ -9,7 +9,6 @@ import Menu from './Menu';
 const Header = ({ menuOpen, setmenuOpen }) => {
   const [openShare,setOpenShare]=useState(false)
   const navItems = data.header.navItems;
-  console.log(navItems);
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper fixed-top container">
