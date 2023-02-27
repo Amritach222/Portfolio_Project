@@ -1,18 +1,19 @@
-import React from "react";
+import React from 'react'
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 // Importing data
-import data from "../data";
+import data from "../../data";
+import './footer.scss'
 const Footer = () => {
-  const { name, footer } = data;
-  const { social_media_link } = footer;
+    const { name, footer } = data;
+    const { social_media_link } = footer;
   return (
     <div className="footer">
-      <div className="footer_container container d-flex flex-column flex-sm-row  justify-content-between align-items-center">
-        <div className="footer_container_left d-flex flex-column flex-md-row justify-content-center align-items-center pt-3">
-          <div className="footer_container_left_links d-flex justify-content-sm-start justify-content-around">
+      <div className="footer_container ">
+        <div className="footer_container_left ">
+          <div className="footer_container_left_links ">
             <a
               className="social_media_link mx-2"
               href={social_media_link.twt}
@@ -55,7 +56,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,0 +1,40 @@
+@use '../../scss/' as *;
+.footer{
+    background-color: $background_color;
+    padding: 10px 0;
+    height: fit-content;
+    width: 100vw;
+}
+.footer_container{
+    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+    &_left{
+        display: flex;
+        &_links{
+            a{
+                margin-right: 5px;
+                text-decoration:'none';
+                transition: all .5s ease;
+                &:hover{
+                    color:$primary_color;
+                }
+            }
+        }
+
+    }
+    &_right{
+        font-size: x-small;
+        color: white;
+        span{
+            color:$primary_color;
+        }
+    }
+
+}
+.social_media_link{
+    color:white;
+    
+}
