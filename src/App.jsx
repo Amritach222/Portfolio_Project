@@ -12,6 +12,7 @@ import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Menu from "./components/menu/Menu"
 import Footer from './components/footer/Footer';
+import About from './components/about/About';
 function App() {
    // initialize aos
    Aos.init({
@@ -25,6 +26,7 @@ function App() {
     <Menu menuOpen={menuOpen} setmenuOpen={setmenuOpen}/>
     <div className="sections">
     <Intro/>
+    <About/>
     <Portfolio/>
     <Works/>
     <Testimonials/>
