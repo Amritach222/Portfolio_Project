@@ -31,7 +31,7 @@ export default function Works() {
 
     return (
         <div className="works" id="works">
-           <div className="slider" style={{transform:`translateX(-${slide *100}vw)`}}>
+           <div className="slider" style={{transform:`translateX(-${slide *110}vw)`}}>
            { data.map((data, index)=>(
 
                <div className="container" key={index}>

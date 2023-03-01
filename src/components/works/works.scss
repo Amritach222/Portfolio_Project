@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    height: calc(100vh - 70px);
     .arrow{
         height: 50px;
         position: absolute;
@@ -25,8 +26,9 @@
         height: 350px;
         display: flex;
         position: absolute;
-        left: 0;
+        left: -78px;
         transition: all 2s ease-out;
+        overflow-y:hidden;
         @include mobile{
             height: 100%;
             flex-direction: column;
