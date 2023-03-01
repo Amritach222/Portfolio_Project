@@ -30,6 +30,7 @@
         flex-wrap: wrap;
         @include mobile{
             width: 100%;
+            flex-direction: row;
         }
        
         .item{
