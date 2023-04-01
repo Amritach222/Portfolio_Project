@@ -1,120 +1,55 @@
-export const featuredPortfolio=[
+import news from '../src/assets/project_images/news.webp'
+import inventory from '../src/assets/project_images/inventory.png'
+import pretty_paws from '../src/assets/project_images/pretty_paws.png'
+import qms from '../src/assets/project_images/qms.jpg'
+import sugar from '../src/assets/project_images/sugar.jfif'
+import text from '../src/assets/project_images/text.png'
+export const projects=[
     {
         id:1,
-        title:"Social Media App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
+        type:'mobile',
+        title:"Pretty Paws",
+        img:pretty_paws,
+        link:'https://github.com/Amritach222/Prettypaws'
     },
     {
         id:2,
-        title:"Dog Adoption Mobile App",
-        img:"https://cdn.dribbble.com/users/4167412/screenshots/10540865/media/f19b8788d2078c110f27af62ca8f4818.png"
+        type:'web',
+        title:"Inventory management system",
+        img:inventory,
+        link:'https://github.com/Amritach222/inventory-application'
     },
     {
         id:3,
+        type:'web',
         title:"TextUtilApp",
-        img:"https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/f6/89/98/f6899892-21f3-3c54-4e27-6044ad99ca30/mzl.dadcvkqt.png/1000x1000bb.png"
+        img:text,
+        link:'https://github.com/Amritach222/TextUtilApp-React'
     }
     ,{
         id:4,
-        title:"School Management App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
+        type:'web',
+        title:"QMS",
+        img:qms,
+        link:'https://github.com/Amritach222/stockmanagement'
     },{
         id:5,
-        title:"Banking App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
+        type:'web',
+        title:"News app",
+        img:news,
+        link:'https://github.com/Amritach222/NewsApp'
     },{
         id:6,
-        title:"Food Ordering App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
-    }
-]
-export const webPortfolio=[
-    {
-        id:1,
-        title:"Social Media App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
+        type:'web',
+        title:"Diabetes tracker",
+        img:sugar, 
+        link:'https://github.com/Amritach222/diabetesmonitorapp'
     },
     {
-        id:2,
-        title:"Dog Adoption Mobile App",
-        img:"https://cdn.dribbble.com/users/4167412/screenshots/10540865/media/f19b8788d2078c110f27af62ca8f4818.png"
-    },
-    {
-        id:3,
-        title:"TextUtilApp",
-        img:"https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/f6/89/98/f6899892-21f3-3c54-4e27-6044ad99ca30/mzl.dadcvkqt.png/1000x1000bb.png"
-    }
-    ,{
-        id:4,
-        title:"School Management App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
-    },{
-        id:5,
-        title:"Banking App",
-        img:"https://www.fotolip.com/wp-content/uploads/2016/05/Website-Templates-8.jpg"
-    },{
-        id:6,
-        title:"Food Ordering App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
-    }
-]
-export const mobilePortfolio=[
-    {
-        id:1,
-        title:"Social Media App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
-    },
-    {
-        id:2,
-        title:"Dog Adoption Mobile App",
-        img:"https://cdn.dribbble.com/users/4167412/screenshots/10540865/media/f19b8788d2078c110f27af62ca8f4818.png"
-    },
-    {
-        id:3,
-        title:"TextUtilApp",
-        img:"https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/f6/89/98/f6899892-21f3-3c54-4e27-6044ad99ca30/mzl.dadcvkqt.png/1000x1000bb.png"
-    }
-    ,{
-        id:4,
-        title:"School Management App",
-        img:"https://s.tmimgcdn.com/scr/26900/business-website-template_26922-original.jpg"
-    },{
-        id:5,
-        title:"Banking App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
-    },{
-        id:6,
-        title:"Food Ordering App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
-    }
-]
-export const mlPortfolio=[
-    {
-        id:1,
-        title:"Social Media App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
-    },
-    {
-        id:2,
-        title:"Dog Adoption Mobile App",
-        img:"https://cdn.dribbble.com/users/4167412/screenshots/10540865/media/f19b8788d2078c110f27af62ca8f4818.png"
-    },
-    {
-        id:3,
-        title:"TextUtilApp",
-        img:"https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/f6/89/98/f6899892-21f3-3c54-4e27-6044ad99ca30/mzl.dadcvkqt.png/1000x1000bb.png"
-    }
-    ,{
-        id:4,
-        title:"School Management App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
-    },{
-        id:5,
-        title:"Banking App",
-        img:"https://cdn.dribbble.com/users/804176/screenshots/3887704/doom-social_media_layouit.jpg"
-    },{
-        id:6,
-        title:"Food Ordering App",
-        img:"https://uicookies.com/wp-content/uploads/2018/04/travelix-free-directory-website-templates.jpg"
+        id:7,
+        type:'ml',
+        title:"Diabetes tracker",
+        img:sugar,
+        link:'https://github.com/Amritach222/diabetesmonitorapp'
     }
 ]

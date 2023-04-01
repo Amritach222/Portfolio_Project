@@ -1,18 +1,15 @@
 import { useState,useEffect } from "react"
 import PortfolioList from "../portfolioList/PortfolioList"
 import "./portfolio.scss"
-import {featuredPortfolio,
-        webPortfolio,
-        mobilePortfolio,
-        mlPortfolio} from "../../data.jsx"
+import { projects } from "../../data.jsx"
 
 export default function Portfolio() {
-    const [selected, setSelected] = useState("featured")
+    const [selected, setSelected] = useState("all")
     const [data, setData] = useState([])
     const list=[
         {
-        id:"featured",
-        title:"Featured"
+        id:"all",
+        title:"All"
     },{
         id:"web",
         title:"Web App"
@@ -25,20 +22,20 @@ export default function Portfolio() {
     }]
     useEffect(() => {
        switch(selected){
-            case "featured":
-               setData(featuredPortfolio);
+            case "all":
+               setData(projects);
                break;
             case "web":
-                setData(webPortfolio);
+                setData(projects.filter((el,)=> el.type==='web'));
                 break;
             case "mobile":
-                    setData(mobilePortfolio);
+                    setData(projects.filter((el,)=> el.type==='mobile'));
                     break;
             case "ml":
-                     setData(mlPortfolio);
+                     setData(projects.filter((el,)=> el.type==='ml'));
                      break;
             default:
-                setData(featuredPortfolio)
+                setData(projects)
        }
        
     }, [selected])
@@ -58,11 +55,11 @@ export default function Portfolio() {
         <div className="container">
         {
             data.map((d, index)=>(
-                <div className="item" key={index}>
+                <a  href={d.link} target="_blank" className="item" key={index}>
                 <img src={d.img}
                  alt="" />
                 <h3>{d.title}</h3>
-            </div>
+            </a>
                 
             ))}
         </div>

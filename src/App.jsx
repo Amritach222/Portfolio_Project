@@ -13,6 +13,7 @@ import Contact from './components/contact/Contact'
 import Menu from "./components/menu/Menu"
 import Footer from './components/footer/Footer';
 import About from './components/about/About';
+import Skills from './components/skills/Skills';
 function App() {
    // initialize aos
    Aos.init({
@@ -30,6 +31,7 @@ function App() {
     <Portfolio/>
     <Works/>
     <Testimonials/>
+    <Skills/>
     <Contact/>
     <Footer/>
     </div>
